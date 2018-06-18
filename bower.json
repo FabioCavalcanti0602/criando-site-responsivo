@@ -1,0 +1,22 @@
+{
+  "name": "site_responsivo_meio_fim",
+  "homepage": "https://github.com/FabioCavalcanti0602/criando-site-responsivo",
+  "authors": [
+    "Fábio Cavalcanti <cavalcanti.fabio@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
+}

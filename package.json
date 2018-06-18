@@ -1,0 +1,22 @@
+{
+  "name": "site-reponsivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabioCavalcanti0602/criando-site-responsivo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabioCavalcanti0602/criando-site-responsivo/issues"
+  },
+  "homepage": "https://github.com/FabioCavalcanti0602/criando-site-responsivo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

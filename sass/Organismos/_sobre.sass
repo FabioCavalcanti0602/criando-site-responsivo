@@ -1,0 +1,68 @@
+section.sobre
+  .itens
+      +flexbox
+      +align-items(center)
+      +justify-content(space-around)
+
+      margin: 50px 0
+      text-align: center
+
+      +make-sm-column(10) // cria 10 colunas
+      +make-sm-column-offset(1) // adiciona 01 coluna de cada lado, totalizando 12 colunas no layout
+
+      +breakpoint($tablet)
+          display: block
+
+      .foto-central
+          +order(3)
+          +breakpoint($tablet)
+              margin: 0 0 30px
+
+      //pegar todos os elementos com a class icone- dos itens principal
+      [class^="icone-"]
+          width: 90px
+          height: 90px
+          background-color: $azul-claro
+          +border-radius(120px)
+          text-align: center
+          line-height: 90px
+          color: $branco
+          +font-size(55px)
+
+          +breakpoint($tablet)
+               display: inline-block
+               width: 75px
+               height: 75px
+               line-height: 80px
+               +font-size(50px)
+               margin: 0 5px
+
+          +breakpoint($celular)
+               display: block
+               text-align: center
+               line-height: 70px
+               margin: auto auto 20px
+
+          &.icone-lapis
+              +order(1) // colocar os icones na order do layout correta no centro
+
+          &.icone-codigo
+              +order(2)
+
+          &.icone-caderno
+              +order(4)
+
+          &.icone-compartilhar
+              +order(5)
+
+  .textos
+      +make-sm-column(8) // cria 08 colunas
+      +make-sm-column-offset(2) // adiciona 02 colunas em cada lado, totalizando 12 colunas do layout
+
+      text-align: center
+      p
+         +font-size(30px)
+
+      .botao
+          display: table
+          margin: 30px auto

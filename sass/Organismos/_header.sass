@@ -1,0 +1,85 @@
+header
+  +clearfix
+  min-height: 282px
+  position: relative
+
+  &:after // cria a barra abaixo da imagem - criar uma bordar na cor desejada
+    content: ""
+    display: block
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 45px
+    +gradient(90deg, $verde, $azul) // 0deg -> fica de baixo pra cima 90deg->fica da esquerda para a direita
+
+  background:
+    image: url("../images/fundo_topo.jpg")
+    position: top center
+    repeat: no-repeat
+    color: $preto
+    attachment: fixed
+    //size: cover
+
+  .logo
+    float: left
+    margin: 30px 0 0
+    img
+      width: 51px
+      height: 44px
+
+  .links
+    float: right
+    margin: 40px 0 0
+
+    nav,
+    .social
+      display: inline-block
+
+    nav
+      +breakpoint($tablet)
+        display: none
+
+      +breakpoint($celular)
+        display: none
+
+      ul
+        li
+          display: inline-block
+          margin: 0 20px 0 0
+          a
+             color: $branco
+             text-transform: uppercase
+
+    .social
+      li
+        display: inline-block
+        margin: 0 5px 0 0
+        a
+           color: $branco
+           display: block
+           border: 1px solid $branco
+           padding: 4px
+           width: 25px
+           height: 25px
+           line-height: 10px
+           text-align: center
+           +border-radius(120px)
+
+  h1
+    clear: both
+    margin: 90px auto 20px auto !important
+    font-weight: $light
+    border: 3px solid $branco
+    padding: 20px
+    display: table
+    //criar um @mediaquery para a resolução do celular
+    +breakpoint($celular)
+        // ajusta a fonte do H! para o celular
+        +font-size(40px)
+
+  h1,
+
+  p
+    color: $branco
+    text-align: center
+    text-transform: uppercase
